@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1779048962 source:/home/kali/Documents/Algoritmos y Estructura de Datos/Practica/Ejercicios/Cola_Circular/main.c
+	<stdio.h>
+	<stdlib.h>
+
