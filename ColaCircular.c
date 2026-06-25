@@ -39,6 +39,10 @@ int ponerEnColaC(tColaC* pc, const void* pd, unsigned tam)
     return TODO_OK;
 }
 
+
+//Recordar que en la Cola se saca el primero.
+//*pc->4->1->2->3->4
+//Sería: elim = (*pc)->sig
 int sacarDeColaC(tColaC* pc, void* pd, unsigned tam)
 {
     tNodo* elim;
