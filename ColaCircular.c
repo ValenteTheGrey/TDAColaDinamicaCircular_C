@@ -79,3 +79,17 @@ int esColaCLlena(tColaC* pc, const void* pd, unsigned tam)
 
     return (!nodo || !info);
 }
+
+void vaciarColaC(tColaC* pc)
+{
+    tNodo* elim;
+
+    while(*pc) {
+        elim = (*pc)->sig;
+        (*pc)->sig = elim->sig;
+        if (elim->sig == elim)
+            *pc = NULL;
+        free(elim->info);
+        free(elim);
+    }
+}
