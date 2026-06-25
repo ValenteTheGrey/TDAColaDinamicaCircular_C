@@ -17,7 +17,7 @@ int ponerEnColaC(tColaC* pc, const void* pd, unsigned tam)
     if(!nue)
         return SIN_MEMORIA;
 
-    nue->info = malloc(sizeof(tam));
+    nue->info = malloc(tam);
     if(!nue->info)
     {
         free(nue);
