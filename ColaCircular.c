@@ -5,6 +5,12 @@ void crearColaC(tColaC* pc)
     *pc = NULL;
 }
 
+
+//En ColaDinamica mantenemos *pc apuntando siempre al último elemento agregado
+//Si esta vacia: *pc->1->1
+//Luego: *pc->2->1->2
+//Luego: *pc->3->1->2->3
+//Luego: *pc->4->1->2->3->4
 int ponerEnColaC(tColaC* pc, const void* pd, unsigned tam)
 {
     tNodo* nue = (tNodo*)malloc(sizeof(tNodo));
