@@ -80,6 +80,16 @@ int esColaCLlena(tColaC* pc, const void* pd, unsigned tam)
     return (!nodo || !info);
 }
 
+int verFrenteDeColaC(tCola* pc, void* pd, unsigned tam)
+{
+   if(!*pc)
+      return COLA_VACIA;
+
+   memcpy(pd, (*pc)->sig->info, MINIMO(tam, (*pc)->sig->tamInfo);
+
+   return TODO_OK;
+}
+
 void vaciarColaC(tColaC* pc)
 {
     tNodo* elim;
